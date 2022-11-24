@@ -126,13 +126,15 @@ img  {
   
   .gallery img {
     padding:10%;
+    
   } 
   .desc {
     display:flex;
     text-align: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding-bottom:10px;
+    padding:15px 15px;
+    height:90px;
   }
   .footer {
     background-color:rgb(74, 96, 122, 1);
@@ -161,8 +163,8 @@ img  {
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
-    margin-top:30px;
-    margin-bottom:30px;
+    margin-top:20px;
+    margin-bottom:20px;
   }
   .f a{
     color:white;
@@ -174,7 +176,16 @@ img  {
   .f p{
     color:rgba(221, 208, 164, 1);
   }
-  @media screen and (max-width: 700px) {
+ 
+  @media screen and (max-width: 865px) {
+    .footer{
+      flex-wrap:wrap;
+     }
+    .top-nav-menu {   
+      font-size: 1.1em;
+      width:100%;
+      flex-direction: column;
+    }
     .top-nav-menu {   
       font-size: 1.1em;
       width:100%;
@@ -193,10 +204,12 @@ img  {
       height:auto;
       font-size: 0.9;
       padding-bottom: 50px;
+      flex-direction: column;
     }
     .r{
       border-radius:30px;
       border-color:rgb(243, 241, 241);
+      padding-bottom:5px ;
       box-shadow: 0 0px 4px 3px rgba(181, 181, 181, 0.24),0 0px 4px 4px rgba(100, 100, 100, 0.19)
     }
     .content{
@@ -211,20 +224,17 @@ img  {
       width:60%;
       margin-bottom:30px;
     }
-    .footer{
-     flex-wrap:wrap;
-    }
-  }
-  @media screen and (max-width: 865px) {
-    .top-nav-menu {   
-      font-size: 1.1em;
-      width:100%;
-      flex-direction: column;
-    }
     h1{
       text-align: center;
     }
+    .f{
+      margin-bottom:0px;
+      padding-top:20px;
+    }
     h2{
       text-align: center;
+    }
+    .desc{
+      display:none;
     }
   }
