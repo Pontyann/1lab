@@ -177,7 +177,15 @@ img  {
   .f p{
     color:rgba(221, 208, 164, 1);
   }
- 
+  .icons{
+    display:inline;
+  }
+ .f img{
+  width:15%;
+  padding-left:10px;
+  padding-right:10px;
+    display:inline;
+ }
   @media screen and (max-width: 865px) {
     .footer{
       flex-wrap:wrap;
@@ -231,6 +239,9 @@ img  {
     .f{
       margin-bottom:0px;
       padding-top:20px;
+    }
+    .f img{
+      width:20%;
     }
     h2{
       text-align: center;
